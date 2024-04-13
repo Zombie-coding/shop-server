@@ -199,7 +199,7 @@ describe('Boiler Parts Controller', () => {
   });
 
   it('should get by name', async () => {
-    const body = { name: 'Verbera adinventitias.' };
+    const body = { name: 'Voluptas saepe.' };
     const login = await request(app.getHttpServer())
       .post('/users/login')
       .send({ username: mockedUser.username, password: mockedUser.password });
@@ -216,7 +216,7 @@ describe('Boiler Parts Controller', () => {
         boiler_manufacturer: expect.any(String),
         parts_manufacturer: expect.any(String),
         vendor_code: expect.any(String),
-        name: 'Verbera adinventitias.',
+        name: 'Voluptas saepe.',
         description: expect.any(String),
         images: expect.any(String),
         in_stock: expect.any(Number),
