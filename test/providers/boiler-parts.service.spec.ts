@@ -58,7 +58,7 @@ describe('Auth Service', () => {
   });
 
   it('should find by name', async () => {
-    const part = await boilerPartsService.findOneByName('Verbera adinventitias.');
+    const part = await boilerPartsService.findOneByName('Voluptas saepe.');
 
     expect(part.dataValues).toEqual(
       expect.objectContaining({
@@ -67,7 +67,7 @@ describe('Auth Service', () => {
         boiler_manufacturer: expect.any(String),
         parts_manufacturer: expect.any(String),
         vendor_code: expect.any(String),
-        name: 'Verbera adinventitias.',
+        name: 'Voluptas saepe.',
         description: expect.any(String),
         images: expect.any(String),
         in_stock: expect.any(Number),
