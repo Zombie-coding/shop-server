@@ -19,7 +19,7 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://testff-42nw.onrender.com'],
+    origin: ['http://localhost:3001', 'https://no-hnd6.onrender.com'],
   });
 
   const config = new DocumentBuilder()
