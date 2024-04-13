@@ -19,11 +19,11 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://no-hnd6.onrender.com'],
+    origin: ['http://localhost:3001', 'https://shop-client-ijcw.onrender.com'],
   });
 
   const config = new DocumentBuilder()
-    .setTitle('Voinikoo.ee')
+    .setTitle('Аква термикс')
     .setDescription('api documentation')
     .setVersion('1.0')
     .addTag('api')
@@ -31,6 +31,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
 
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(3000);
 }
 bootstrap();
