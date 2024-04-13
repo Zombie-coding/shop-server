@@ -10,4 +10,5 @@ export class User extends Model {
 
   @Column
   email: string;
+  static password: any;
 }
