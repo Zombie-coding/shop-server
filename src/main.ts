@@ -19,7 +19,7 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://shop-client-h0qx.onrender.com/', 'https://shop-client-h0qx.onrender.com'],
+    origin: ['http://localhost:3001', 'https://shop-client-h0qx.onrender.com'],
   });
 
   const config = new DocumentBuilder()
