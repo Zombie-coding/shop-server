@@ -19,7 +19,7 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://no-hnd6.onrender.com', 'https://no-grrp.vercel.app',],
+    origin: ['http://localhost:3001', 'https://no-hnd6.onrender.com', 'https://no-grrp.vercel.app', 'no-production.up.railway.app',],
   });
 
   const config = new DocumentBuilder()
